@@ -7,7 +7,7 @@
  * @license https://opensource.org/licenses/BSD-3-Clause
  */
 
-namespace \bigdropinc\db;
+namespace bigdropinc\db;
 
 
 use Yii;

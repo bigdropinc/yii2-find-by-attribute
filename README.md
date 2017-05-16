@@ -25,7 +25,15 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Add into your base Active Record method like this
 
-```php
-<?= \\bigdropinc\findByAttribute\AutoloadExample::widget(); ?>```
+```
+use bigdropinc\db\FindByAttribute
+
+public static function __callStatic($name, $arguments)
+    {
+        if(static::isFindByCanProcess($name)){
+            return static::processFindBy($name, $arguments);
+        }
+    }
+```
