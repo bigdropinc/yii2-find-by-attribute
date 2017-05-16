@@ -1,0 +1,21 @@
+{
+    "name": "bigdropinc/yii2-find-by-attribute",
+    "description": "Allowed to use magic methods for finding active records by attributes",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","find","attribute","ActiveRecord"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Vadim Trunov",
+            "email": "vadim.tr@bigdropinc.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\bigdropinc\\db\\": ""
+        }
+    }
+}
